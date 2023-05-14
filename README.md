@@ -9,7 +9,7 @@ Experiments show that our model not only significantly improves existing methods
 
 ## SYNTH-PEDES 
 The dataset will be released soon.
-
+<div align="center"><img src="assets/SYNTH-PEDES.png" width="900"></div>
 ## Models
 We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on text-based person Re-ID task.
 
@@ -47,7 +47,7 @@ We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate t
 
 ### Evaluate on PETA & PA-100K & RAP (PAR mA/F1)
 | Methods | PETA | PA-100K | RAP
-| :---: |:---: |:---: 
+| :---: |:---: |:---: |:---: 
 | DeepMAR | 80.14/83.56| 78.28/84.32| 76.81/78.94
 | Rethink |83.96/86.35 |80.21/87.40 |79.27/79.95
 | VTB |84.12/86.63| 81.02/87.31| 81.43/80.63
