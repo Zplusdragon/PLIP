@@ -1,5 +1,5 @@
 # PLIP
-**PLIP** is a novel language-image pre-training framework for generic person representation learning which benefits a range of downstream multimodal person-centric tasks. To explicitly build fine-grained cross-modal associations and mine latent person-centric semantics, we specifically design three pretext tasks: 1) Semantic-fused image colorization, 2) Visual-fused Attribute Prediction and 3) Vision-language Matching.
+**PLIP** is a novel **L**anguage-**I**mage **P**re-training framework for generic **P**erson representation learning which benefits a range of downstream multimodal person-centric tasks. To explicitly build fine-grained cross-modal associations and mine latent person-centric semantics, we specifically design three pretext tasks: 1) Semantic-fused image colorization, 2) Visual-fused Attribute Prediction and 3) Vision-language Matching.
 
 Also, we present a large-scale person dataset named **SYNTH-PEDES**, where the Stylish Pedestrian Attributes-union Captioning method **(SPAC)** is proposed to synthesize diverse textual descriptions. 
 
@@ -11,10 +11,16 @@ Experiments show that our model not only significantly improves existing methods
 SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different descriptions. The dataset will be released soon.
 <div align="center"><img src="assets/SYNTH-PEDES.png" width="900"></div>
 
+## Train & Fine-tune
+The training and fine-tuning code will be released soon.
+
+## Inference
+Our model has great capability in **zero-shot transfer**. The inference code will be released soon.
+
 ## Models
 We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on three downstream tasks. The checkpoints will be released soon.
 
-### Evaluate on CUHK-PEDES dataset (text Re-ID R@1/R@10)
+### Evaluate on CUHK-PEDES dataset (Text Re-ID R@1/R@10)
 | Pre-train | CMPM/C | SSAN | LGUR | 
 | :---: |:---: |:---: | :---: 
 | IN sup | 54.81/83.22 |  61.37/86.73 | 64.21/87.93 
@@ -24,7 +30,7 @@ We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate t
 | LUP-NL |57.35/84.77| 63.71/87.46| 64.68/88.69
 | **PLIP(ours)** |**69.23/91.16**| **64.91/88.39**| **67.22/89.49**
 
-### Evaluate on ICFG-PEDES dataset (text Re-ID R@1/R@10)
+### Evaluate on ICFG-PEDES dataset (Text Re-ID R@1/R@10)
 | Pre-train | CMPM/C | SSAN | LGUR | 
 | :---: |:---: |:---: | :---: 
 | IN sup | 47.61/75.48| 54.23/79.53| 57.42/81.45
@@ -34,7 +40,7 @@ We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate t
 | LUP-NL |49.64/76.15| 55.59/79.78| 60.25/82.84
 | **PLIP(ours)** |**64.25/86.32**| **60.12/82.84**| **62.27/83.96**
 
-### Evaluate on Market1501 & DukeMTMC (image Re-ID mAP/cmc1)
+### Evaluate on Market1501 & DukeMTMC (Image Re-ID mAP/cmc1)
 | Methods | Market1501 | DukeMTMC | 
 | :---: |:---: |:---: 
 | BOT | 85.9/94.5 |76.4/86.4
@@ -58,6 +64,8 @@ We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate t
 | **PLIP+VTB** |86.03/**88.14**| 83.24/88.57 |83.64/**81.78**
 | **PLIP+Label2Label** |**86.12**/88.08 |**84.36**/**88.63**| **83.77**/81.49
 
+## Codes on Downstream Tasks
+The codes on downstream tasks will be released soon.
 
 
 
