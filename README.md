@@ -8,10 +8,11 @@ Experiments show that our model not only significantly improves existing methods
 <div align="center"><img src="assets/abstract.png" width="600"></div>
 
 ## SYNTH-PEDES 
-The dataset will be released soon.
+SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different descriptions. The dataset will be released soon.
 <div align="center"><img src="assets/SYNTH-PEDES.png" width="900"></div>
+
 ## Models
-We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on text-based person Re-ID task.
+We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on three downstream tasks. The checkpoints will be released soon.
 
 ### Evaluate on CUHK-PEDES dataset (text Re-ID R@1/R@10)
 | Pre-train | CMPM/C | SSAN | LGUR | 
