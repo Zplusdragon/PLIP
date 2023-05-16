@@ -3,7 +3,7 @@
 
 Also, we present a large-scale person dataset named **SYNTH-PEDES**, where the Stylish Pedestrian Attributes-union Captioning method **(SPAC)** is proposed to synthesize diverse textual descriptions. 
 
-Experiments show that our model not only significantly improves existing methods on downstream tasks, but also shows great ability in the few-shot and domain generalization settings. More details can be found at xxx.
+Experiments show that our model not only significantly improves existing methods on downstream tasks, but also shows great ability in the few-shot and domain generalization settings. More details can be found at our paper [PLIP: Language-Image Pre-training for Person Representation Learning](http://export.arxiv.org/abs/2305.08386).
 
 <div align="center"><img src="assets/abstract.png" width="600"></div>
 
