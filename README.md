@@ -67,5 +67,14 @@ We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate t
 ## Codes on Downstream Tasks
 The codes on downstream tasks will be released soon.
 
-
-
+## Reference
+If you use PLIP in your research, please cite it by the following BibTeX entry:
+```
+@misc{zuo2023plip,
+    title={PLIP: Language-Image Pre-training for Person Representation Learning},
+    author={Jialong Zuo and Changqian Yu and Nong Sang and Changxin Gao},
+    year={2023},
+    eprint={2305.08386},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
