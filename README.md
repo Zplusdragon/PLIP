@@ -23,7 +23,7 @@ The training and fine-tuning code will be released soon.
 Our model has great capability in **zero-shot transfer**. The inference code will be released soon.
 
 ## Models
-We utilize MResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on three downstream tasks. The checkpoints will be released soon.
+We utilize ResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on three downstream tasks. The checkpoints will be released soon.
 
 ### Evaluate on CUHK-PEDES dataset (Text Re-ID R@1/R@10)
 | Pre-train | CMPM/C | SSAN | LGUR | 
