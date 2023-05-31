@@ -21,7 +21,7 @@ This is the comparison of SYNTH-PEDES with other popular datasets.
 <div align="center"><img src="assets/SYNTH-PEDES.png" width="900"></div>
 
 ## Models
-We utilize ResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on three downstream tasks. The checkpoints will be released soon.
+We utilize ResNet50 and Bert as our encoders. After pre-training, we fine-tune and evaluate the performance on three downstream tasks. The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1LjT-x6kjGwpO2EP4Ni7bCA?pwd=1037).
 
 ### Evaluate on CUHK-PEDES dataset (Text Re-ID R@1/R@10)
 | Pre-train | CMPM/C | SSAN | LGUR | 
