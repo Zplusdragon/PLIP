@@ -96,18 +96,32 @@ Organize them in `data` folder as follows:
 |            |-- test
 |            |-- train 
 |       |-- ICFG_PEDES.json
+|
+|   |-- <SYNTH-PEDES>/
+|       |-- Part1
+|       |-- ...
+|       |-- Part11
+|       |-- synthpedes_dataset.json
 ```
 
-Run the python file and generate train/test/valid json files respectively.
+### Zero-shot Inference
+Our pre-trained model can directly be transfered to downstream tasks, especially text-based Re-ID.
+
+1. Run the python file and generate train/test/valid json files respectively.
 ```
 python dataset_split.py
 ```
 
-### Zero-shot Inference
-Our pre-trained model can directly be transfered to text-based Re-ID, you can evaluate by running:
+2. Then you can evaluate by running:
 ```
 python zs_inference.py
 ```
+
+### Fine-tuning Inference
+Almost all existing downstream person-centric methods can be improved through replacing the backbone with our pre-trained model. Taking CMPM/C as example, the fine-tuning code will be released soon.
+
+### Evaluate on Other Tasks
+The evaluation code will be released soon.
 
 ## Reference
 If you use PLIP in your research, please cite it by the following BibTeX entry:
