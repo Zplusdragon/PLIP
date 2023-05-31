@@ -67,6 +67,17 @@ We utilize ResNet50 and Bert as our encoders. After pre-training, we fine-tune a
 | **PLIP+VTB** |86.03/**88.14**| 83.24/88.57 |83.64/**81.78**
 | **PLIP+Label2Label** |**86.12**/88.08 |**84.36**/**88.63**| **83.77**/81.49
 
+
+## Usage
+### Install Requirements
+we use 4 RTX3090 24G GPU for training and evaluation.
+
+Create conda environment
+'''
+conda create --name PLIP --file requirements.txt
+conda activare PLIP
+'''
+
 ## Reference
 If you use PLIP in your research, please cite it by the following BibTeX entry:
 ```
