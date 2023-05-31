@@ -75,7 +75,7 @@ we use 4 RTX3090 24G GPU for training and evaluation.
 Create conda environment.
 ```
 conda create --name PLIP --file requirements.txt
-conda activare PLIP
+conda activate PLIP
 ```
 
 ### Datasets Prepare
