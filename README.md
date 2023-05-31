@@ -8,7 +8,7 @@ Experiments show that our model not only significantly improves existing methods
 <div align="center"><img src="assets/abstract.png" width="600"></div>
 
 ## News
-* [05.31] We released the SYNTH-PEDES dataset!
+* 🔥[05.31] We released the SYNTH-PEDES dataset!
 
 ## SYNTH-PEDES 
 SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different descriptions. The dataset will be released soon.
