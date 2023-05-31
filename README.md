@@ -1,5 +1,5 @@
 # PLIP
-**PLIP** is a novel **L**anguage-**I**mage **P**re-training framework for generic **P**erson representation learning which benefits a range of downstream multimodal person-centric tasks. To explicitly build fine-grained cross-modal associations and mine latent person-centric semantics, we specifically design three pretext tasks: 1) Semantic-fused image colorization, 2) Visual-fused Attribute Prediction and 3) Vision-language Matching.
+**PLIP** is a novel **L**anguage-**I**mage **P**re-training framework for generic **P**erson representation learning which benefits a range of downstream cross-modal person-centric tasks. To explicitly build fine-grained cross-modal associations and mine latent person-centric semantics, we specifically design three pretext tasks: 1) Semantic-fused image colorization, 2) Visual-fused Attribute Prediction and 3) Vision-language Matching.
 
 Also, we present a large-scale person dataset named **SYNTH-PEDES**, where the Stylish Pedestrian Attributes-union Captioning method **(SPAC)** is proposed to synthesize diverse textual descriptions. 
 
