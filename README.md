@@ -23,7 +23,7 @@ This is the comparison of SYNTH-PEDES with other popular datasets.
 ## Models
 We utilize ResNet50 and Bert as our encoders. After pre-training, we fine-tune and evaluate the performance on three downstream tasks. The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1LjT-x6kjGwpO2EP4Ni7bCA?pwd=1037).
 
-### Evaluate on CUHK-PEDES dataset (Text Re-ID R@1/R@10)
+### CUHK-PEDES dataset (Text Re-ID R@1/R@10)
 | Pre-train | CMPM/C | SSAN | LGUR | 
 | :---: |:---: |:---: | :---: 
 | IN sup | 54.81/83.22 |  61.37/86.73 | 64.21/87.93 
@@ -33,7 +33,7 @@ We utilize ResNet50 and Bert as our encoders. After pre-training, we fine-tune a
 | LUP-NL |57.35/84.77| 63.71/87.46| 64.68/88.69
 | **PLIP(ours)** |**69.23/91.16**| **64.91/88.39**| **67.22/89.49**
 
-### Evaluate on ICFG-PEDES dataset (Text Re-ID R@1/R@10)
+### ICFG-PEDES dataset (Text Re-ID R@1/R@10)
 | Pre-train | CMPM/C | SSAN | LGUR | 
 | :---: |:---: |:---: | :---: 
 | IN sup | 47.61/75.48| 54.23/79.53| 57.42/81.45
@@ -43,7 +43,7 @@ We utilize ResNet50 and Bert as our encoders. After pre-training, we fine-tune a
 | LUP-NL |49.64/76.15| 55.59/79.78| 60.25/82.84
 | **PLIP(ours)** |**64.25/86.32**| **60.12/82.84**| **62.27/83.96**
 
-### Evaluate on Market1501 & DukeMTMC (Image Re-ID mAP/cmc1)
+### Market1501 & DukeMTMC (Image Re-ID mAP/cmc1)
 | Methods | Market1501 | DukeMTMC | 
 | :---: |:---: |:---: 
 | BOT | 85.9/94.5 |76.4/86.4
