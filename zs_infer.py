@@ -14,9 +14,9 @@ from PLIPmodel import Create_PLIP_Model
 def Test_parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_path', type=str, default='checkpoints/PLIP_MRN50.pth.tar')
-    parser.add_argument('--image_path', type=str, default='data/cuhk')
+    parser.add_argument('--image_path', type=str, default='data/CUHK-PEDES/imgs')
     parser.add_argument('--test_path', type=str,
-                        default='data/CUHK-PEDES-test.json',
+                        default='data/CUHK-PEDES/CUHK-PEDES-test.json',
                         help='path for test annotation json file')
 # ***********************************************************************************************************************
 # 设置模型backbone的类型和参数
@@ -79,12 +79,6 @@ def Test_main(args):
     ])
 
     image_test_loader,text_test_loader = get_loader_test(args, transform,  args.batch_size,args.num_workers)
-
-    ac_t2i_top1_best = 0.0
-    ac_t2i_top5_best = 0.0
-    ac_t2i_top10_best = 0.0
-    mAP_best = 0.0
-    best = 0
     model = Create_PLIP_Model(args).to(device)
 
     model_file = args.model_path
@@ -95,15 +89,8 @@ def Test_main(args):
     model.image_encoder.load_state_dict(checkpoint["ImgEncoder_state_dict"])
     model.text_encoder.load_state_dict(checkpoint["TxtEncoder_state_dict"])
     ac_top1_t2i, ac_top5_t2i, ac_top10_t2i, mAP = test(image_test_loader,text_test_loader, model)
-    if ac_top1_t2i > ac_t2i_top1_best:
-        ac_t2i_top1_best = ac_top1_t2i
-        ac_t2i_top5_best = ac_top5_t2i
-        ac_t2i_top10_best = ac_top10_t2i
-        mAP_best = mAP
-        best = i
         
-    print('Epo{}:  {:.5f}  {:.5f}  {:.5f}  {:.5f}'.format(
-            best+1, ac_t2i_top1_best, ac_t2i_top5_best, ac_t2i_top10_best, mAP_best))
+    print('R@1:{:.5f}  R@5:{:.5f}  R@10:{:.5f}  mAP:{:.5f}'.format(ac_t2i_top1, ac_t2i_top5, ac_t2i_top10, mAP))
 
 import warnings
 warnings.filterwarnings("ignore")
