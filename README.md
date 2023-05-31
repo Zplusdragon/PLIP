@@ -72,11 +72,42 @@ We utilize ResNet50 and Bert as our encoders. After pre-training, we fine-tune a
 ### Install Requirements
 we use 4 RTX3090 24G GPU for training and evaluation.
 
-Create conda environment
-'''
+Create conda environment.
+```
 conda create --name PLIP --file requirements.txt
 conda activare PLIP
-'''
+```
+
+### Datasets Prepare
+Download the CUHK-PEDES dataset from [here](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description) and ICFG-PEDES dataset from [here](https://github.com/zifyloo/SSAN).
+
+Organize them in `data` folder as follows:
+```
+|-- data/
+|   |-- <CUHK-PEDES>/
+|       |-- imgs
+|            |-- cam_a
+|            |-- cam_b
+|            |-- ...
+|       |-- reid_raw.json
+|
+|   |-- <ICFG-PEDES>/
+|       |-- imgs
+|            |-- test
+|            |-- train 
+|       |-- ICFG_PEDES.json
+```
+
+Run the python file and generate train/test/valid json files respectively.
+```
+python dataset_split.py
+```
+
+### Zero-shot Inference
+Our pre-trained model can directly be transfered to text-based Re-ID, you can evaluate by running:
+```
+python zs_inference.py
+```
 
 ## Reference
 If you use PLIP in your research, please cite it by the following BibTeX entry:
