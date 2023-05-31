@@ -19,12 +19,6 @@ These are some examples of our SYNTH-PEDES dataset.
 This is the comparison of SYNTH-PEDES with other popular datasets.
 <div align="center"><img src="assets/SYNTH-PEDES.png" width="900"></div>
 
-## Train & Fine-tune
-The training and fine-tuning code will be released soon.
-
-## Inference
-Our model has great capability in **zero-shot transfer**. The inference code will be released soon.
-
 ## Models
 We utilize ResNet50 and Bert as our encoders. After pre-training, we evaluate the performance on three downstream tasks. The checkpoints will be released soon.
 
@@ -71,9 +65,6 @@ We utilize ResNet50 and Bert as our encoders. After pre-training, we evaluate th
 | **PLIP+Rethink**|85.56/87.63| 82.09/88.12| 81.87/81.53
 | **PLIP+VTB** |86.03/**88.14**| 83.24/88.57 |83.64/**81.78**
 | **PLIP+Label2Label** |**86.12**/88.08 |**84.36**/**88.63**| **83.77**/81.49
-
-## Codes on Downstream Tasks
-The codes on downstream tasks will be released soon.
 
 ## Reference
 If you use PLIP in your research, please cite it by the following BibTeX entry:
