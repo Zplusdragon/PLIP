@@ -8,7 +8,7 @@ Experiments show that our model not only significantly improves existing methods
 <div align="center"><img src="assets/abstract.png" width="600"></div>
 
 ## News
-* 🔥[05.31] The model checkpoints and inference code have been released !
+* 🔥[05.31] The pre-trained model checkpoints and zero-shot inference code have been released !
 * 🔥[05.31] We released the SYNTH-PEDES dataset !
 
 ## SYNTH-PEDES 
