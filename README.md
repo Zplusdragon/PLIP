@@ -1,14 +1,14 @@
 # PLIP
-**PLIP** is a novel **L**anguage-**I**mage **P**re-training framework for generic **P**erson representation learning which benefits a range of downstream cross-modal person-centric tasks. To explicitly build fine-grained cross-modal associations and mine latent person-centric semantics, we specifically design three pretext tasks: 1) Semantic-fused image colorization, 2) Visual-fused Attribute Prediction and 3) Vision-language Matching.
+**PLIP** is a novel **L**anguage-**I**mage **P**re-training framework for generic **P**erson representation learning which benefits a range of downstream person-centric tasks.
 
-Also, we present a large-scale person dataset named **SYNTH-PEDES**, where the Stylish Pedestrian Attributes-union Captioning method **(SPAC)** is proposed to synthesize diverse textual descriptions. 
+Also, we present a large-scale person dataset named **SYNTH-PEDES** to verify its effectiveness, where the Stylish Pedestrian Attributes-union Captioning method **(SPAC)** is proposed to synthesize diverse textual descriptions. 
 
 Experiments show that our model not only significantly improves existing methods on downstream tasks, but also shows great ability in the few-shot and domain generalization settings. More details can be found at our paper [PLIP: Language-Image Pre-training for Person Representation Learning](http://export.arxiv.org/abs/2305.08386).
 
 <div align="center"><img src="assets/abstract.png" width="600"></div>
 
 ## News
-* 🔥[05.31] The pre-trained model and zero-shot inference code have been released !
+* 🔥[05.31] The pre-trained model and zero-shot inference code are released !
 
 ## SYNTH-PEDES 
 SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different descriptions. The dataset will be released soon.
