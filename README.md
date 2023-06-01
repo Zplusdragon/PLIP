@@ -9,8 +9,8 @@ Experiments show that our model not only significantly improves existing methods
 
 ## News
 * 🔥[06.1] The **SYNTH-PEDES** is released. Welcome to download and use!
-* 🔥[06.1] The code for CMPM/C fine-tuning is released! It leads to SOTA performance without bells and whistles!
-* 🔥[05.31] The pre-trained model and zero-shot inference code are released !
+* 🔥[06.1] The code for **CMPM/C fine-tuning** is released! It leads to SOTA performance without bells and whistles!
+* 🔥[05.31] The pre-trained model and **zero-shot inference** code are released !
 
 ## SYNTH-PEDES 
 SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different descriptions. The dataset is released at [Baidu Yun](https://pan.baidu.com/s/11jQ3gvkn77b3jjVx-quQxQ?pwd=1037).
