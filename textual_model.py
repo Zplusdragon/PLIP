@@ -19,8 +19,7 @@ class Textual_encoder(nn.Module):
                     
     def get_global_embedding(self,token,mask):
         x = self.encoder(input_ids=token, attention_mask=mask)
-        hidden_states = x.last_hidden_state
-        pooler_output = torch.mean(hidden_states, dim=1)
+        pooler_output = x.pooler_output
         return pooler_output
 
     def get_local_embedding(self,token,mask):
@@ -31,7 +30,7 @@ class Textual_encoder(nn.Module):
     def forward(self, token, mask):
         x = self.encoder(input_ids=token, attention_mask=mask)
         hidden_states = x.last_hidden_state
-        pooler_output = torch.mean(hidden_states, dim=1)
+        pooler_output = x.pooler_output
         return pooler_output, hidden_states
 
 
