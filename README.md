@@ -117,7 +117,20 @@ python zs_inference.py
 ```
 
 ### Fine-tuning Inference
-Almost all existing downstream person-centric methods can be improved through replacing the backbone with our pre-trained model. Taking CMPM/C as example, the fine-tuning code will be released soon.
+Almost all existing downstream person-centric methods can be improved through replacing the backbone with our pre-trained model. Taking CMPM/C as example:
+
+1. Go to the CMPM/C root:
+```
+cd Downstreams/CMPM-C
+```
+
+2. Run the following to train. Note that you can modify the code yourself for single GPU training:
+```
+python dataset_split.py 
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 train.py
+```
+
+
 
 ### Evaluate on Other Tasks
 The evaluation code will be released soon.
