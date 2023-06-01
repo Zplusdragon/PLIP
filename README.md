@@ -8,6 +8,7 @@ Experiments show that our model not only significantly improves existing methods
 <div align="center"><img src="assets/abstract.png" width="600"></div>
 
 ## News
+* 🔥[06.1] The code for CMPM/C fine-tuning is released! It leads to SOTA performance without bells and whistles!
 * 🔥[05.31] The pre-trained model and zero-shot inference code are released !
 
 ## SYNTH-PEDES 
