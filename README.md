@@ -126,16 +126,26 @@ Almost all existing downstream person-centric methods can be improved through re
 cd Downstreams/CMPM-C
 ```
 
-2. Run the following to train. Note that you can modify the code yourself for single GPU training:
+2. Run the following to train and test. Note that you can modify the code yourself for single GPU training:
 ```
 python dataset_split.py 
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 train.py
+python test.py
 ```
 
 
 
-### Evaluate on Other Tasks
-The evaluation code will be released soon.
+### Evaluate on Other Methods and Tasks.
+By simply replacing the visual backbone with our pre-trained model, almost all existing methods on downstream tasks make significant improvements. For example, you can try by the following repositories:
+
+**Text-based Re-ID:**
+[SSAN](https://github.com/zifyloo/SSAN), [LGUR](https://github.com/ZhiyinShao-H/LGUR)
+
+**Image-based Re-ID:**
+[BOT](https://github.com/michuanhaohao/reid-strong-baseline), [MGN](https://github.com/seathiefwang/MGN-pytorch), [ABD-Net](https://github.com/VITA-Group/ABD-Net)
+
+**Person Attribute Recognition:**
+[Rethink](https://github.com/valencebond/Rethinking_of_PAR), [Label2label](https://github.com/Li-Wanhua/Label2Label/tree/main/Pedestrian_Attribute), [VTB](https://github.com/cxh0519/VTB)
 
 ## Reference
 If you use PLIP in your research, please cite it by the following BibTeX entry:
