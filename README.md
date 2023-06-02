@@ -13,7 +13,25 @@ Experiments show that our model not only significantly improves existing methods
 * 🔥[05.31] The pre-trained model and **zero-shot inference** code are released !
 
 ## SYNTH-PEDES 
-SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different descriptions. The dataset is released at [Baidu Yun](https://pan.baidu.com/s/11jQ3gvkn77b3jjVx-quQxQ?pwd=1037).
+SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different texutal descriptions and 6 attribute annotations. The dataset is released at [Baidu Yun](https://pan.baidu.com/s/11jQ3gvkn77b3jjVx-quQxQ?pwd=1037).
+
+Annotation format:
+```
+{
+    "id": 7,
+    "file_path": "Part1/7/1.jpg",
+    "attributes": [
+        "man,black hair,black shirt,pink shorts,black shoes,unknown"
+    ],
+    "captions": [
+        "A man in his mid-twenties with short black hair is wearing a black t-shirt over light pink trousers. He is also wearing black shoes.",
+        "The man with short black hair is wearing a black shirt and salmon pink shorts. He is also wearing black shoes."
+    ],
+    "prompt_caption": [
+        "A man with black hair is wearing a black shirt with pink shorts and a pair of black shoes."
+    ]
+}
+```
 
 These are some examples of our SYNTH-PEDES dataset.
 <div align="center"><img src="assets/examples.png" width="900"></div>
