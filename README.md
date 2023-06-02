@@ -15,6 +15,12 @@ Experiments show that our model not only significantly improves existing methods
 ## SYNTH-PEDES 
 SYNTH-PEDES is by far the largest person dataset with textual descriptions without any human annotation effort. Every person image has 2 or 3 different texutal descriptions and 6 attribute annotations. The dataset is released at [Baidu Yun](https://pan.baidu.com/s/11jQ3gvkn77b3jjVx-quQxQ?pwd=1037).
 
+This is the comparison of SYNTH-PEDES with other popular datasets.
+<div align="center"><img src="assets/SYNTH-PEDES.png" width="900"></div>
+
+These are some examples of our SYNTH-PEDES dataset.
+<div align="center"><img src="assets/examples.png" width="900"></div>
+
 Annotation format:
 ```
 {
@@ -32,12 +38,6 @@ Annotation format:
     ]
 }
 ```
-
-These are some examples of our SYNTH-PEDES dataset.
-<div align="center"><img src="assets/examples.png" width="900"></div>
-
-This is the comparison of SYNTH-PEDES with other popular datasets.
-<div align="center"><img src="assets/SYNTH-PEDES.png" width="900"></div>
 
 ## Models
 We utilize ResNet50 and Bert as our encoders. After pre-training, we fine-tune and evaluate the performance on three downstream tasks. The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1LjT-x6kjGwpO2EP4Ni7bCA?pwd=1037).
