@@ -170,11 +170,11 @@ By simply replacing the visual backbone with our pre-trained model, almost all e
 ## Reference
 If you use PLIP in your research, please cite it by the following BibTeX entry:
 ```
-@misc{zuo2023plip,
-    title={PLIP: Language-Image Pre-training for Person Representation Learning},
-    author={Jialong Zuo and Changqian Yu and Nong Sang and Changxin Gao},
-    year={2023},
-    eprint={2305.08386},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@inproceedings{
+zuo2024plip,
+title={PLIP: Language-Image Pre-training for Person Representation Learning},
+author={Jialong Zuo and Jiahao Hong and Feng Zhang and Changqian Yu and Hanyu Zhou and Changxin Gao and Nong Sang and Jingdong Wang},
+booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+year={2024}
 }
+```
